@@ -11,8 +11,8 @@ connection: {
     keys: {
     // Use everdev to generate your phrase
     // !!! Never commit it in your repos !!!
-    // phrase: "action inject penalty envelope rabbit element slim tornado dinner pizza off blood",
-    amount: 20,
+    // phrase: "blur flight saddle silent secret oblige shield heavy film gasp affair apple",
+    amount: 1000,
     },
     
 };

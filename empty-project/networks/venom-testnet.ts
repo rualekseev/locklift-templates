@@ -5,7 +5,7 @@ const VENOM_TESTNET_GIVER_ADDRESS = process.env.VENOM_TESTNET_GIVER_ADDRESS || '
 const VENOM_TESTNET_GIVER_PHRASE = process.env.VENOM_TESTNET_GIVER_PHRASE || '';
 const TESTNET_DEPLOYER_PHRASE = process.env.TESTNET_DEPLOYER_PHRASE || '';
 
-export const venom_testnet_jrpc_network: NetworkValue<ConfigState,"venom-testnet-jrpc"> = {
+export const venom_testnet_network: NetworkValue<ConfigState,"venom-testnet"> = {
     connection: {
         id: 1000,
         type: 'jrpc',

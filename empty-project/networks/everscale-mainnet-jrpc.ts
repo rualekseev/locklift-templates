@@ -5,7 +5,7 @@ const EVERSCALE_MAINNET_GIVER_ADDRESS = process.env.EVERSCALE_MAINNET_GIVER_ADDR
 const EVERSCALE_MAINNET_GIVER_PHRASE = process.env.EVERSCALE_MAINNET_GIVER_PHRASE || '';
 const MAINNET_DEPLOYER_PHRASE = process.env.MAINNET_DEPLOYER_PHRASE || '';
 
-export const ever_mainnet_jrpc_network: NetworkValue<ConfigState,"ever-mainnet-jrpc"> = {
+export const ever_mainnet_jrpc_network: NetworkValue<ConfigState,"everscale-mainnet-jrpc"> = {
     connection: {
         id: 42,
         type: 'jrpc',

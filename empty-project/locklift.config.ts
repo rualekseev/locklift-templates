@@ -8,13 +8,11 @@ import { Deployments } from "@broxus/locklift-deploy";
 dotenv.config();
 
 import { locklift_network } from "./networks/locklift-local";
-import { ever_testnet_jrpc_network } from "./networks/everscale-testnet-jrpc";
-import { ever_testnet_gql_network } from "./networks/everscale-testnet-gql";
-import { venom_testnet_jrpc_network } from "./networks/venom-testnet-jrpc";
-import { ever_mainnet_gql_network } from "./networks/everscale-mainnet-gql";
+import { venom_testnet_network } from "./networks/venom-testnet";
 import { ever_mainnet_jrpc_network } from "./networks/everscale-mainnet-jrpc";
 import { venom_mainnet_jrpc_network } from "./networks/venom-mainnet-jrpc";
 import { venom_mainnet_gql_network } from "./networks/venom-mainnet-gql";
+import { tycho_testnet_network } from "./networks/tycho-testnet"
 
 chai.use(lockliftChai);
 
@@ -47,13 +45,11 @@ const config: LockliftConfig = {
   },
   networks: { 
     locklift: locklift_network,
-    ever_testnet_jrpc: ever_testnet_jrpc_network,
-    ever_testnet_gql: ever_testnet_gql_network,
-    ever_mainnet_jrpc: ever_mainnet_jrpc_network,
-    ever_mainnet_gql: ever_mainnet_gql_network,
-    venom_testnet_jrpc: venom_testnet_jrpc_network,
+    ever_mainnet: ever_mainnet_jrpc_network,
+    venom_testnet: venom_testnet_network,
     venom_mainnet_jrpc: venom_mainnet_jrpc_network,
     venom_mainnet_gql: venom_mainnet_gql_network,
+    tycho_testnet: tycho_testnet_network,
   },
   mocha: {
     timeout: 2000000,

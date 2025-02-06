@@ -7,7 +7,7 @@ export default async () => {
     [
       {
         deploymentName: "ever-wallet",
-        signerId: "0",
+        signerId: "777",
         accountSettings: {
           type: WalletTypes.EverWallet,
           value: toNano(0.1),
